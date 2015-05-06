@@ -7,7 +7,7 @@
 #define ___WINDOW_H___
 
 #include <InterfaceKit.h>
-#include <interface/GroupLayout.h>
+#include <interface/LayoutBuilder.h>
 
 class Display;
 
@@ -17,7 +17,7 @@ public:
   Window(BRect frame);
 
 private:
-  BGroupLayout *flow;
+  BLayout *layout;
 
   Display *display;
 };
