@@ -6,13 +6,12 @@
 #ifndef ___WINDOW_H___
 #define ___WINDOW_H___
 
-#include <InterfaceKit.hpp>
+#include <InterfaceKit.h>
 
-class Window : BWindow
+class Window : public BWindow
 {
 public:
-  Window();
-}
-
+  Window(BRect frame);
+};
 
 #endif // ___WINDOW_H___
