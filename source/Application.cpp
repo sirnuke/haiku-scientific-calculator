@@ -3,13 +3,11 @@
 //
 // See LICENSE for licensing information.
 
+
 #include "Application.hpp"
 
-int main()
+Application::Application()
+  : BApplication("application/com.degrendel.haiku-scientific-calculator")
 {
-  Application app;
-  app.Run();
-
-  return 0;
 }
 
