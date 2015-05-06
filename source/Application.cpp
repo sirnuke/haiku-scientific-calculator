@@ -7,7 +7,11 @@
 #include "Application.hpp"
 
 Application::Application()
-  : BApplication("application/com.degrendel.haiku-scientific-calculator")
+  : BApplication("application/com.degrendel.haiku-scientific-calculator"), window(NULL)
+{
+}
+
+void Application::ReadyToRun()
 {
 }
 

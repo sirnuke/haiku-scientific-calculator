@@ -8,10 +8,17 @@
 
 #include <AppKit.h>
 
+class Window;
+
 class Application : public BApplication
 {
 public:
   Application();
+
+  void ReadyToRun();
+
+private:
+  Window *window;
 };
 
 #endif // ___APPLICATION_H___
