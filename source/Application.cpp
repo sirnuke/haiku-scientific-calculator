@@ -7,6 +7,9 @@
 #include "Application.hpp"
 #include "Window.hpp"
 
+#include "Actions/Action.hpp"
+#include "Actions/Go.hpp"
+
 const int DEFAULT_WINDOW_X = 100;
 const int DEFAULT_WINDOW_Y = 100;
 const int DEFAULT_WINDOW_WIDTH = 800;
