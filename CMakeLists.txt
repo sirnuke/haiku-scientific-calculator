@@ -3,7 +3,8 @@ project (HaikuScientificCalculator)
 set (EXECUTABLE "ScientificCalculator")
 include_directories (include/)
 
-file (GLOB SRC source/*.cpp)
+file (GLOB SOURCE source/*.cpp)
+file (GLOB ACTIONS source/actions/*.cpp)
 
-add_executable (${EXECUTABLE} ${SRC})
+add_executable (${EXECUTABLE} ${SOURCE} ${ACTIONS})
 target_link_libraries (${EXECUTABLE} be)
