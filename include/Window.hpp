@@ -8,10 +8,15 @@
 
 #include <InterfaceKit.h>
 
+class Display;
+
 class Window : public BWindow
 {
 public:
   Window(BRect frame);
+
+private:
+  Display *display;
 };
 
 #endif // ___WINDOW_H___
