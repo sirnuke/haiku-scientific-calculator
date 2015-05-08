@@ -8,11 +8,14 @@
 
 Window::Window(BRect frame)
   : BWindow(frame, "Scientific Calculator", B_TITLED_WINDOW, B_QUIT_ON_WINDOW_CLOSE),
-    display(NULL)
+    flow(NULL), display(NULL)
 {
-  display = new Display();
-  display->ResizeToPreferred();
+  flow = new BGroupLayout(B_VERTICAL);
+  SetLayout(flow);
 
-  AddChild(display);
+  display = new Display();
+
+  flow->AddView(display);
+
 }
 
